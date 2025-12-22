@@ -1,0 +1,28 @@
+# Projects Collection
+# Each project can have the following fields:
+#   title       - Project name (required)
+#   description - Brief description
+#   url         - Link to project (external URL or internal path)
+#   image       - Image filename (relative to this folder)
+#   emoji       - Emoji icon displayed before title
+#   date        - Date or date range (e.g., "2024" or "2023-2024")
+#   status      - Current status (e.g., "Active", "Completed", "Archived")
+#   tags        - List of tags/technologies
+
+[[projects]]
+title = "NixOS Configs"
+emoji = "❄️"
+description = "I use NixOS across pretty much all of my home systems. I love the declarative nature of the OS and the configurations I use. I maintain a public repo for my configs in the hope that it can help others learn about what NixOS has to offer."
+url = "https://github.com/tomwrw/nix-config"
+date = "2024"
+status = "Active"
+tags = ["nixos", "home-manager"]
+
+[[projects]]
+title = "austere"
+emoji = "🎨"
+description = "austere is a theme for Zola, the static site generator. It's the theme that powers this website. I wrote the theme because I wanted a simple, minimalist theme that focussed on writing. I maintain the theme over at GitHub."
+url = "https://github.com/tomwrw/austere-theme-zola"
+date = "2025"
+status = "Active"
+tags = ["design", "css", "zola"]
