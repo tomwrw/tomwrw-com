@@ -49,7 +49,7 @@ menu_links = [
 background = "#FAF7F2"
 text = "#1a1a1a"
 text_muted = "#3a3a3a"
-accent = "#B85450"
+accent = "#9E4440"
 code_bg = "#f0ebe3"
 border = "#e0d9ce"
 
