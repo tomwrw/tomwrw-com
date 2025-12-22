@@ -1,15 +1,46 @@
 on: push
+name: Build and deploy GH Pages
 jobs:
-  build_and_deploy:
-    runs-on: ubuntu-latest
+  # Build the site
+  build:
     if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
     steps:
-      - name: 'checkout'
+      - name: Checkout
         uses: actions/checkout@v4
-      - name: 'build and deploy'
-        uses: shalzz/zola-deploy-action@master
-        env:
-          PAGES_BRANCH: master
-          BUILD_DIR: .
-          TOKEN: ${{ secrets.TOKEN }}
-          REPOSITORY: tomwrw/tomwrw.github.io
+        with:
+          submodules: 'recursive'
+      
+      - name: Install zola
+        run: sudo snap install --edge zola
+
+      - name: Build site
+        run: zola build
+
+      - name: Upload static files as artifact
+        id: deployment
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: public/
+
+  # Deploy to GitHub Pages
+  deploy:
+    # Add a dependency to the build job
+    needs: build
+
+    # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
+    permissions:
+      pages: write      # to deploy to Pages
+      id-token: write   # to verify the deployment originates from an appropriate source
+
+    # Deploy to the github-pages environment
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    # Specify runner + deployment step
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
