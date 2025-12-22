@@ -1,7 +1,7 @@
 # The URL the site will be built for
 base_url = "https://tomwrw.com"
 title = "tomwrw"
-description = ""
+description = "The personal website of tomwrw - a solutions architect with a passion for technology, free and open source software and cyber security."
 # The theme for my site.
 theme = "austere"
 # Whether to automatically compile all Sass files in the sass directory
