@@ -32,6 +32,7 @@ anchors = "on"
 
 [extra]
 # Put all your custom variables here
+site_icon = ""
 strapline = ""
 favicon = "/favicon.ico"
 keywords = "blog, writing, zola"
