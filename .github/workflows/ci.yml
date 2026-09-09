@@ -1,0 +1,34 @@
+name: CI
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+env:
+  HUGO_VERSION: 0.165.0
+
+jobs:
+  build:
+    name: Build site
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+
+      - name: Install Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: ${{ env.HUGO_VERSION }}
+          extended: true
+
+      # Warnings fail the pull request rather than surfacing in a deploy.
+      - name: Build site
+        env:
+          HUGO_ENVIRONMENT: production
+        run: hugo --gc --minify --panicOnWarning --printPathWarnings
