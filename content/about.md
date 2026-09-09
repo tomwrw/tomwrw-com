@@ -1,6 +1,6 @@
 +++
 title = "About"
-description = "A little about Tom - a solutions architect from the UK who writes about Linux, open source and security."
+description = "A little about me - a solutions architect from the UK who writes about Linux, open source and security."
 date = 2026-01-01
 +++
 

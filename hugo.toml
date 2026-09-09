@@ -35,3 +35,11 @@ enableRobotsTXT = true
     name = "Tags"
     pageRef = "/tags"
     weight = 30
+  [[menus.main]]
+    name = "Categories"
+    pageRef = "/categories"
+    weight = 40
+  [[menus.main]]
+    name = "About"
+    pageRef = "/about"
+    weight = 50
