@@ -8,6 +8,7 @@ enableRobotsTXT = true
 
 # Only the taxonomy actually used, so Hugo does not emit empty /categories/ pages.
 [taxonomies]
+  category = "categories"
   tag = "tags"
 
 # Zola served /rss.xml; Hugo defaults to /index.xml. This keeps the old feed URL alive.
