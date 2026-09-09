@@ -1,5 +1,5 @@
 +++
-title = "Introducing my NixOS configuration - megadots."
+title = "Introducing my NixOS configuration - megadots"
 description = "An introduction to NixOS, the Nix language and the den framework."
 date = 2026-09-08
 tags = ["nixos", "nix", "den", "denful", "linux", "declarative", "megadots"]
