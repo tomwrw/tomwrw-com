@@ -1,2 +1,8 @@
+# Hugo build output and caches
 public/
-static/processed_images/
+resources/_gen/
+.hugo_build.lock
+
+# OS / editor
+.DS_Store
+*.swp

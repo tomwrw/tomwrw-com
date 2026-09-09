@@ -1,0 +1,37 @@
+baseURL = "https://tomwrw.com/"
+title = "tomwrw"
+theme = "austere"
+locale = "en-GB"
+defaultContentLanguage = "en"
+copyright = "© tomwrw"
+enableRobotsTXT = true
+
+# Only the taxonomy actually used, so Hugo does not emit empty /categories/ pages.
+[taxonomies]
+  tag = "tags"
+
+# Zola served /rss.xml; Hugo defaults to /index.xml. This keeps the old feed URL alive.
+[outputFormats.RSS]
+  baseName = "rss"
+
+[params]
+  description = "The personal website of tomwrw - a solutions architect with a passion for technology, free and open source software and cyber security."
+  author = "tomwrw"
+  keywords = "blog, writing, hugo, nixos, security"
+  footerText = "Made with <a href='https://gohugo.io'>Hugo</a>"
+  favicon = "/favicon.ico"
+  siteIcon = "quill"
+
+[menus]
+  [[menus.main]]
+    name = "Home"
+    pageRef = "/"
+    weight = 10
+  [[menus.main]]
+    name = "Posts"
+    pageRef = "/posts"
+    weight = 20
+  [[menus.main]]
+    name = "Tags"
+    pageRef = "/tags"
+    weight = 30
