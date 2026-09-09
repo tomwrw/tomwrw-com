@@ -13,7 +13,7 @@ This post is the introduction I wish I'd had when I started. What Nix is, what N
 
 Fair warning up front. I'm not a developer. I'm a solutions architect who got curious about declarative system management and fell down the rabbit hole. Everything below is how I understand it, not how a compiler engineer would explain it.
 
-## Nix, the language.
+## Nix, the language
 
 The first thing to get straight is that Nix is two things wearing the same name, and confusing them makes the whole thing harder than it needs to be.
 
@@ -46,7 +46,7 @@ And that's genuinely most of the language. There's no class hierarchy, no contro
 
 The thing that took me longest to internalise is that Nix files aren't scripts. Nothing in them runs in order. You aren't telling the machine to do a sequence of things, you're describing a value, and something else decides what to do with it. Once that clicked, the rest got a lot easier.
 
-## NixOS, the operating system.
+## NixOS, the operating system
 
 NixOS takes that idea and applies it to a whole system.
 
@@ -68,7 +68,7 @@ The learning curve is steep and it's front-loaded. Doing something the NixOS way
 
 I stuck with it because I got tired of not knowing what was on my machines. Everything since has been a bonus.
 
-## Using a framework.
+## Using a framework
 
 Here's the part I didn't expect. Plain NixOS gives you a module system, which is excellent, but it doesn't give you any opinion about how to organise a configuration across more than one machine and more than one user. That's left entirely to you, and there are as many answers as there are repos.
 
@@ -142,7 +142,7 @@ That's the core of the framework. Four terms, and the rest of the repo is just f
 
 I'll add one caveat. I'd been using NixOS for around 18 months before I jumped in to den. With that time, I had a pretty solid hand-crafted classic flake configuration that I had become intimately familiar with. Starting with den would initially seem complex, but the quality of the documentation, and the rapidly growing exosystem of public repos make starting with den far more attractive now. I wouldn't hesitate to start here.
 
-## What declarative gives you.
+## What declarative gives you
 
 It's easy to talk about this in the abstract, so here's what it looks like in practice on my machines.
 
@@ -171,7 +171,7 @@ Stylix reads that at both the system and the session level, so the login screen,
 
 Declarative config turns a class of problem from "hope I remember" into "read the file". That's less exciting than it sounds and more valuable than it sounds. The system stopped being a thing I maintained and became a thing I described.
 
-## Where to start.
+## Where to start
 
 If any of this appeals, the resources that got me there:
 
