@@ -2,7 +2,7 @@
 title = "Introducing my NixOS configuration - megadots."
 description = "An introduction to NixOS, the Nix language and the den framework."
 date = 2026-09-08
-tags = ["nixos", "nix", "den", "linux", "declarative"]
+tags = ["nixos", "nix", "den", "denful", "linux", "declarative", "megadots"]
 +++
 
 I've been daily driving NixOS for nearly two years now. In that time I've rewritten my configuration four times, and the current one is called [megadots](https://github.com/tomwrw/megadots). It runs both of my machines: a desktop and a Surface Pro. It handles the disks, the boot chain, the secrets, the desktop, the theme and the applications, and it does all of it from one Git repo.
