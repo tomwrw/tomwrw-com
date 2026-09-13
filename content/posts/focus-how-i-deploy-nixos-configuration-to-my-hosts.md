@@ -2,7 +2,6 @@
 title = "Focus: How I deploy NixOS configuration to my hosts"
 description = "A deep dive on the deploy step in megadots - where it started, why it exists at all, what it actually does line by line, and how to skip it if you don't need it."
 date = 2026-09-13
-draft = true
 tags = ["nixos", "nix", "nixos-anywhere", "sops-nix", "disko", "impermanence", "deployment", "megadots", "focus"]
 categories = ["focus"]
 +++
