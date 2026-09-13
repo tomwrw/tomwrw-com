@@ -4,6 +4,7 @@ description = "A deep dive on the deploy step in megadots - where it started, wh
 date = 2026-09-13
 draft = true
 tags = ["nixos", "nix", "nixos-anywhere", "sops-nix", "disko", "impermanence", "deployment", "megadots", "focus"]
+categories = ["focus"]
 +++
 
 When I posted [megadots](https://github.com/tomwrw/megadots) on Reddit, the most common comment was some version of "the deploy process looks complex". That's a fair thing to say from the outside. There's a USB stick involved, a staging directory, a `--chown` flag, and a Nix file that generates shell scripts. If you're used to `nixos-rebuild switch` and nothing else, it looks like a lot of code for the job of installing an operating system.
