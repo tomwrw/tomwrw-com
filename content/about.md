@@ -4,7 +4,7 @@ description = "A little about me - a solutions architect from the UK who writes 
 date = 2026-01-01
 +++
 
-I'm Tom, a solutions architect from the UK. My working life is spent on secure digital transformation - the unglamorous business of moving organisations onto better foundations without breaking what already works.
+I'm Tom, a solutions architect from the UK. My working life is spent on secure digital transformation - the business of moving organisations onto better, more secure foundations without breaking what already works.
 
 Away from work I run Linux everywhere I can, mostly NixOS these days, and I enjoy the kind of tinkering that ends with a machine rebuilt from a single Git repo. Free and open source software, self-hosting and cyber security are the threads that run through most of it.
 
